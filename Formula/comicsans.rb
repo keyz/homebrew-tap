@@ -11,4 +11,9 @@ class Comicsans < Formula
   def install
     bin.install "cs"
   end
+
+  test do
+    system bin/"cs", "hello"
+    assert_predicate testpath/"hello.png", :exist?
+  end
 end
