@@ -1,13 +1,14 @@
 class Comicsans < Formula
   desc "cs (comic sans) for :pink-slack-emoji:"
   homepage "https://github.com/keyz/comicsans"
-  url "https://github.com/keyz/comicsans/archive/refs/tags/0.1.0.tar.gz"
-  sha256 "26c67ba85da5c80b5a1d473dd87d0e2d782c4d81e94b476d927ceefa917c8876"
+  url "https://github.com/keyz/comicsans/releases/download/0.2.0/macOS-universal.tar.gz"
+  sha256 "cd4a27b94bcc9fba586e907eff89011669ebd96e7ba5dca4d5b6308eb8d3abfc"
   license "MIT"
 
-  def install
-    system "swift", "build", "-c", "release", "--disable-sandbox"
+  depends_on :macos # macOS only
+  depends_on macos: :ventura # .macOS(.v13)
 
-    bin.install ".build/release/cs"
+  def install
+    bin.install "cs"
   end
 end
