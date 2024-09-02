@@ -1,8 +1,8 @@
 class Comicsans < Formula
   desc "cs (comic sans) for :pink-slack-emoji:"
   homepage "https://github.com/keyz/comicsans"
-  url "https://github.com/keyz/comicsans/releases/download/0.4.0/macOS-universal.tar.gz"
-  sha256 "eb5a10e65a744efaece6cca6a5f902c04e81fe9a461ba6b8c42f7019fcb5b4dd"
+  url "https://github.com/keyz/comicsans/releases/download/0.5.0/macOS-universal.tar.gz"
+  sha256 "455b64ff420a1f147cc4797a604813d6f5361b77a4709b2361e6c0dda7f4a32b"
   license "MIT"
 
   depends_on :macos # macOS only
